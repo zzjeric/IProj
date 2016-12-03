@@ -1,0 +1,47 @@
+{% extends 'CommonBase/Base.html' %}
+
+
+{% block customcss %}
+{% load static %}
+<link href="{% static 'css/dashboard.css' %}" rel="stylesheet">
+{% endblock %}
+
+
+{% block content %}
+<div class="container-fluid">
+    <form class="form-horizontal" role="form">
+        <div class="form-group">
+            <label for="mealName" class="col-sm-2 control-label">美食</label>
+            <div class="col-sm-10" >
+                <select id="mealName" class="form-control">
+                    <!--<option>鸡腿饭</option>-->
+                    <!--<option>咖喱牛肉饭</option>-->
+                    <!--<option>宫保鸡丁饭</option>-->
+                    <!--<option>汉堡套餐</option>-->
+                    <!--<option>麦多馅饼</option>-->
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="orderNum" class="col-sm-2 control-label">数量</label>
+            <div class="col-sm-10" >
+                <select id="orderNum" class="form-control">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="remark" class="col-sm-2 control-label">备注</label>
+            <div class="col-sm-10">
+                <textarea type="text" class="form-control" rows="3" id="remark" placeholder=""></textarea>
+            </div>
+        </div>
+        <input id="rowid" type="hidden">
+    </form>
+</div>
+{% endblock %}
+

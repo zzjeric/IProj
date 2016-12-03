@@ -1,0 +1,33 @@
+{% extends 'CommonBase/Base.html' %}
+
+
+{% block customcss %}
+{% load static %}
+<link href="{% static 'css/dashboard.css' %}" rel="stylesheet">
+{% endblock %}
+
+
+{% block content %}
+<div class="container-fluid">
+    <form role="form" >
+        <div class="form-group">
+            <label for="title">标题</label>
+            <input type="text" class="form-control" id="title" placeholder="请输入本次订餐标题">
+        </div>
+        <div class="form-group">
+            <label for="rest_name">餐厅名称</label>
+            <input type="text" class="form-control" id="rest_name" placeholder="请输入餐厅名称">
+        </div>
+        <div class="form-group">
+            <label for="mealname">美食名称</label>
+            <textarea type="text" class="form-control" rows="3" id="mealname"
+                      placeholder="多个美食请用分号分隔,如 鸡腿饭;咖喱牛肉饭;"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="remark">备注</label>
+            <textarea type="text" class="form-control" rows="3" id="remark"
+                      placeholder=""></textarea>
+        </div>
+    </form>
+</div>
+{% endblock %}

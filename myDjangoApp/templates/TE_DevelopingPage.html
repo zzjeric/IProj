@@ -1,0 +1,48 @@
+{% extends 'CommonBase/Base.html' %}
+
+
+{% block title %} Developing..Under construction.. {% endblock %}
+
+
+{% block customcss %}
+{% load static %}
+<link href="{% static 'css/dashboard.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block topNav %}
+{% include 'CommonBase/TopNavBar.html' %}
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+
+        {% include 'CommonBase/LeftNavBar.html' %}
+
+
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <img src="{% static 'Img/Developing.gif' %}" style="" alt="开发中,敬请期待"/>
+        </div>
+    </div>
+
+</div>
+{% endblock %}
+
+
+{% block bodyjs %}
+<script>
+
+    var indexDict = {{ indexDict|safe }};
+    var index = indexDict['index'];
+    //alert(index);
+
+	$(".nav-sidebar > li").each(function(){
+		if($(this).attr('index')==index){
+			$(this).addClass("active");
+		}else{
+		    $(this).removeClass("active");
+		}
+	});
+
+</script>
+{% endblock %}

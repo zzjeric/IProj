@@ -1,0 +1,1003 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e107af59-ce7f-4225-bac0-fde0ecc1d802" name="Default" comment="deploy version with uwsgi+ngnix+ubuntu">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/Img/Developing.gif" afterPath="$PROJECT_DIR$/collected_static/Img/Developing.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/Img/HeadIconFemale46-46.png" afterPath="$PROJECT_DIR$/collected_static/Img/HeadIconFemale46-46.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/Img/HeadIconMale46-46.png" afterPath="$PROJECT_DIR$/collected_static/Img/HeadIconMale46-46.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/Img/HeadIcon_Female.png" afterPath="$PROJECT_DIR$/collected_static/Img/HeadIcon_Female.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/Img/bg-1.jpg" afterPath="$PROJECT_DIR$/collected_static/Img/bg-1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/Img/bg-2.jpg" afterPath="$PROJECT_DIR$/collected_static/Img/bg-2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/Img/bg-3.jpg" afterPath="$PROJECT_DIR$/collected_static/Img/bg-3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/fonts/Roboto-Bold-webfont.woff" afterPath="$PROJECT_DIR$/collected_static/admin/fonts/Roboto-Bold-webfont.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/fonts/Roboto-Light-webfont.woff" afterPath="$PROJECT_DIR$/collected_static/admin/fonts/Roboto-Light-webfont.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/fonts/Roboto-Regular-webfont.woff" afterPath="$PROJECT_DIR$/collected_static/admin/fonts/Roboto-Regular-webfont.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/collected_static/fonts/glyphicons-halflings-regular.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/collected_static/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/collected_static/fonts/glyphicons-halflings-regular.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/fonts/glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/collected_static/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/static/Img/Developing.gif" afterPath="$PROJECT_DIR$/myDjangoApp/static/Img/Developing.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/static/Img/HeadIconFemale46-46.png" afterPath="$PROJECT_DIR$/myDjangoApp/static/Img/HeadIconFemale46-46.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/static/Img/HeadIconMale46-46.png" afterPath="$PROJECT_DIR$/myDjangoApp/static/Img/HeadIconMale46-46.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/static/Img/HeadIcon_Female.png" afterPath="$PROJECT_DIR$/myDjangoApp/static/Img/HeadIcon_Female.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/static/Img/bg-1.jpg" afterPath="$PROJECT_DIR$/myDjangoApp/static/Img/bg-1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/static/Img/bg-2.jpg" afterPath="$PROJECT_DIR$/myDjangoApp/static/Img/bg-2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/static/Img/bg-3.jpg" afterPath="$PROJECT_DIR$/myDjangoApp/static/Img/bg-3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/static/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/myDjangoApp/static/fonts/glyphicons-halflings-regular.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/static/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/myDjangoApp/static/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/static/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/myDjangoApp/static/fonts/glyphicons-halflings-regular.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/static/fonts/glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/myDjangoApp/static/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/Img/Developing.gif" afterPath="$PROJECT_DIR$/static/Img/Developing.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/Img/HeadIconFemale46-46.png" afterPath="$PROJECT_DIR$/static/Img/HeadIconFemale46-46.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/Img/HeadIconMale46-46.png" afterPath="$PROJECT_DIR$/static/Img/HeadIconMale46-46.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/Img/HeadIcon_Female.png" afterPath="$PROJECT_DIR$/static/Img/HeadIcon_Female.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/Img/bg-1.jpg" afterPath="$PROJECT_DIR$/static/Img/bg-1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/Img/bg-2.jpg" afterPath="$PROJECT_DIR$/static/Img/bg-2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/Img/bg-3.jpg" afterPath="$PROJECT_DIR$/static/Img/bg-3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/fonts/Roboto-Bold-webfont.woff" afterPath="$PROJECT_DIR$/static/admin/fonts/Roboto-Bold-webfont.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/fonts/Roboto-Light-webfont.woff" afterPath="$PROJECT_DIR$/static/admin/fonts/Roboto-Light-webfont.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/fonts/Roboto-Regular-webfont.woff" afterPath="$PROJECT_DIR$/static/admin/fonts/Roboto-Regular-webfont.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DjangoDemo/__init__.py" afterPath="$PROJECT_DIR$/DjangoDemo/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DjangoDemo/settings.py" afterPath="$PROJECT_DIR$/DjangoDemo/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DjangoDemo/urls.py" afterPath="$PROJECT_DIR$/DjangoDemo/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DjangoDemo/wsgi.py" afterPath="$PROJECT_DIR$/DjangoDemo/wsgi.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/css/base.css" afterPath="$PROJECT_DIR$/collected_static/admin/css/base.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/css/changelists.css" afterPath="$PROJECT_DIR$/collected_static/admin/css/changelists.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/css/dashboard.css" afterPath="$PROJECT_DIR$/collected_static/admin/css/dashboard.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/css/fonts.css" afterPath="$PROJECT_DIR$/collected_static/admin/css/fonts.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/css/forms.css" afterPath="$PROJECT_DIR$/collected_static/admin/css/forms.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/css/login.css" afterPath="$PROJECT_DIR$/collected_static/admin/css/login.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/css/rtl.css" afterPath="$PROJECT_DIR$/collected_static/admin/css/rtl.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/css/widgets.css" afterPath="$PROJECT_DIR$/collected_static/admin/css/widgets.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/fonts/LICENSE.txt" afterPath="$PROJECT_DIR$/collected_static/admin/fonts/LICENSE.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/fonts/README.txt" afterPath="$PROJECT_DIR$/collected_static/admin/fonts/README.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/img/LICENSE" afterPath="$PROJECT_DIR$/collected_static/admin/img/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/img/README.txt" afterPath="$PROJECT_DIR$/collected_static/admin/img/README.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/img/calendar-icons.svg" afterPath="$PROJECT_DIR$/collected_static/admin/img/calendar-icons.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/img/gis/move_vertex_off.svg" afterPath="$PROJECT_DIR$/collected_static/admin/img/gis/move_vertex_off.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/img/gis/move_vertex_on.svg" afterPath="$PROJECT_DIR$/collected_static/admin/img/gis/move_vertex_on.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/img/icon-addlink.svg" afterPath="$PROJECT_DIR$/collected_static/admin/img/icon-addlink.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/img/icon-alert.svg" afterPath="$PROJECT_DIR$/collected_static/admin/img/icon-alert.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/img/icon-calendar.svg" afterPath="$PROJECT_DIR$/collected_static/admin/img/icon-calendar.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/img/icon-changelink.svg" afterPath="$PROJECT_DIR$/collected_static/admin/img/icon-changelink.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/img/icon-clock.svg" afterPath="$PROJECT_DIR$/collected_static/admin/img/icon-clock.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/img/icon-deletelink.svg" afterPath="$PROJECT_DIR$/collected_static/admin/img/icon-deletelink.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/img/icon-no.svg" afterPath="$PROJECT_DIR$/collected_static/admin/img/icon-no.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/img/icon-unknown-alt.svg" afterPath="$PROJECT_DIR$/collected_static/admin/img/icon-unknown-alt.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/img/icon-unknown.svg" afterPath="$PROJECT_DIR$/collected_static/admin/img/icon-unknown.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/img/icon-yes.svg" afterPath="$PROJECT_DIR$/collected_static/admin/img/icon-yes.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/img/inline-delete.svg" afterPath="$PROJECT_DIR$/collected_static/admin/img/inline-delete.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/img/search.svg" afterPath="$PROJECT_DIR$/collected_static/admin/img/search.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/img/selector-icons.svg" afterPath="$PROJECT_DIR$/collected_static/admin/img/selector-icons.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/img/sorting-icons.svg" afterPath="$PROJECT_DIR$/collected_static/admin/img/sorting-icons.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/img/tooltag-add.svg" afterPath="$PROJECT_DIR$/collected_static/admin/img/tooltag-add.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/img/tooltag-arrowright.svg" afterPath="$PROJECT_DIR$/collected_static/admin/img/tooltag-arrowright.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/js/SelectBox.js" afterPath="$PROJECT_DIR$/collected_static/admin/js/SelectBox.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/js/SelectFilter2.js" afterPath="$PROJECT_DIR$/collected_static/admin/js/SelectFilter2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/js/actions.js" afterPath="$PROJECT_DIR$/collected_static/admin/js/actions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/js/actions.min.js" afterPath="$PROJECT_DIR$/collected_static/admin/js/actions.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/js/admin/DateTimeShortcuts.js" afterPath="$PROJECT_DIR$/collected_static/admin/js/admin/DateTimeShortcuts.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/js/admin/RelatedObjectLookups.js" afterPath="$PROJECT_DIR$/collected_static/admin/js/admin/RelatedObjectLookups.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/js/calendar.js" afterPath="$PROJECT_DIR$/collected_static/admin/js/calendar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/js/cancel.js" afterPath="$PROJECT_DIR$/collected_static/admin/js/cancel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/js/change_form.js" afterPath="$PROJECT_DIR$/collected_static/admin/js/change_form.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/js/collapse.js" afterPath="$PROJECT_DIR$/collected_static/admin/js/collapse.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/js/collapse.min.js" afterPath="$PROJECT_DIR$/collected_static/admin/js/collapse.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/js/core.js" afterPath="$PROJECT_DIR$/collected_static/admin/js/core.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/js/inlines.js" afterPath="$PROJECT_DIR$/collected_static/admin/js/inlines.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/js/inlines.min.js" afterPath="$PROJECT_DIR$/collected_static/admin/js/inlines.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/js/jquery.init.js" afterPath="$PROJECT_DIR$/collected_static/admin/js/jquery.init.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/js/popup_response.js" afterPath="$PROJECT_DIR$/collected_static/admin/js/popup_response.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/js/prepopulate.js" afterPath="$PROJECT_DIR$/collected_static/admin/js/prepopulate.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/js/prepopulate.min.js" afterPath="$PROJECT_DIR$/collected_static/admin/js/prepopulate.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/js/prepopulate_init.js" afterPath="$PROJECT_DIR$/collected_static/admin/js/prepopulate_init.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/js/timeparse.js" afterPath="$PROJECT_DIR$/collected_static/admin/js/timeparse.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/js/urlify.js" afterPath="$PROJECT_DIR$/collected_static/admin/js/urlify.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/js/vendor/jquery/LICENSE-JQUERY.txt" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/jquery/LICENSE-JQUERY.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/js/vendor/jquery/jquery.js" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/jquery/jquery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/js/vendor/jquery/jquery.min.js" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/jquery/jquery.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/js/vendor/xregexp/LICENSE-XREGEXP.txt" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/xregexp/LICENSE-XREGEXP.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/js/vendor/xregexp/xregexp.js" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/xregexp/xregexp.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/admin/js/vendor/xregexp/xregexp.min.js" afterPath="$PROJECT_DIR$/collected_static/admin/js/vendor/xregexp/xregexp.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/css/bootstrap-theme.css" afterPath="$PROJECT_DIR$/collected_static/css/bootstrap-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/css/bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/collected_static/css/bootstrap-theme.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/css/bootstrap.css" afterPath="$PROJECT_DIR$/collected_static/css/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/collected_static/css/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/css/dashboard.css" afterPath="$PROJECT_DIR$/collected_static/css/dashboard.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/css/signin.css" afterPath="$PROJECT_DIR$/collected_static/css/signin.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/css/signup.css" afterPath="$PROJECT_DIR$/collected_static/css/signup.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/collected_static/fonts/glyphicons-halflings-regular.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/js/bootstrap.js" afterPath="$PROJECT_DIR$/collected_static/js/bootstrap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/collected_static/js/bootstrap.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/js/echarts.common.min.js" afterPath="$PROJECT_DIR$/collected_static/js/echarts.common.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/js/echarts.simple.min.js" afterPath="$PROJECT_DIR$/collected_static/js/echarts.simple.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/js/ie10-viewport-bug-workaround.js" afterPath="$PROJECT_DIR$/collected_static/js/ie10-viewport-bug-workaround.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/js/jquery-3.1.0.min.js" afterPath="$PROJECT_DIR$/collected_static/js/jquery-3.1.0.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/js/jquery.form.js" afterPath="$PROJECT_DIR$/collected_static/js/jquery.form.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/js/jquery.form.min.js" afterPath="$PROJECT_DIR$/collected_static/js/jquery.form.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/js/npm.js" afterPath="$PROJECT_DIR$/collected_static/js/npm.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage.py" afterPath="$PROJECT_DIR$/manage.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/CommonUtil.py" afterPath="$PROJECT_DIR$/myDjangoApp/CommonUtil.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/__init__.py" afterPath="$PROJECT_DIR$/myDjangoApp/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/admin.py" afterPath="$PROJECT_DIR$/myDjangoApp/admin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/apps.py" afterPath="$PROJECT_DIR$/myDjangoApp/apps.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/forms.py" afterPath="$PROJECT_DIR$/myDjangoApp/forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/myDjangoApp/migrations/0001_initial.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/migrations/0002_orderapplication_restname.py" afterPath="$PROJECT_DIR$/myDjangoApp/migrations/0002_orderapplication_restname.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/migrations/0003_auto_20161024_1328.py" afterPath="$PROJECT_DIR$/myDjangoApp/migrations/0003_auto_20161024_1328.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/migrations/0004_auto_20161024_1343.py" afterPath="$PROJECT_DIR$/myDjangoApp/migrations/0004_auto_20161024_1343.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/migrations/0005_auto_20161026_2226.py" afterPath="$PROJECT_DIR$/myDjangoApp/migrations/0005_auto_20161026_2226.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/migrations/__init__.py" afterPath="$PROJECT_DIR$/myDjangoApp/migrations/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/models.py" afterPath="$PROJECT_DIR$/myDjangoApp/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/static/css/bootstrap-theme.css" afterPath="$PROJECT_DIR$/myDjangoApp/static/css/bootstrap-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/static/css/bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/myDjangoApp/static/css/bootstrap-theme.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/static/css/bootstrap.css" afterPath="$PROJECT_DIR$/myDjangoApp/static/css/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/static/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/myDjangoApp/static/css/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/static/css/dashboard.css" afterPath="$PROJECT_DIR$/myDjangoApp/static/css/dashboard.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/static/css/signin.css" afterPath="$PROJECT_DIR$/myDjangoApp/static/css/signin.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/static/css/signup.css" afterPath="$PROJECT_DIR$/myDjangoApp/static/css/signup.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/static/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/myDjangoApp/static/fonts/glyphicons-halflings-regular.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/static/js/bootstrap.js" afterPath="$PROJECT_DIR$/myDjangoApp/static/js/bootstrap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/static/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/myDjangoApp/static/js/bootstrap.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/static/js/echarts.common.min.js" afterPath="$PROJECT_DIR$/myDjangoApp/static/js/echarts.common.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/static/js/echarts.simple.min.js" afterPath="$PROJECT_DIR$/myDjangoApp/static/js/echarts.simple.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/static/js/ie10-viewport-bug-workaround.js" afterPath="$PROJECT_DIR$/myDjangoApp/static/js/ie10-viewport-bug-workaround.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/static/js/jquery-3.1.0.min.js" afterPath="$PROJECT_DIR$/myDjangoApp/static/js/jquery-3.1.0.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/static/js/jquery.form.js" afterPath="$PROJECT_DIR$/myDjangoApp/static/js/jquery.form.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/static/js/jquery.form.min.js" afterPath="$PROJECT_DIR$/myDjangoApp/static/js/jquery.form.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/static/js/npm.js" afterPath="$PROJECT_DIR$/myDjangoApp/static/js/npm.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/templates/AddOrder.html" afterPath="$PROJECT_DIR$/myDjangoApp/templates/AddOrder.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/templates/CalPlus.html" afterPath="$PROJECT_DIR$/myDjangoApp/templates/CalPlus.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/templates/CommonBase/Base.html" afterPath="$PROJECT_DIR$/myDjangoApp/templates/CommonBase/Base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/templates/CommonBase/LeftNavBar.html" afterPath="$PROJECT_DIR$/myDjangoApp/templates/CommonBase/LeftNavBar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/templates/CommonBase/TopNavBar.html" afterPath="$PROJECT_DIR$/myDjangoApp/templates/CommonBase/TopNavBar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/templates/Index.html" afterPath="$PROJECT_DIR$/myDjangoApp/templates/Index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/templates/MealOrderStat.html" afterPath="$PROJECT_DIR$/myDjangoApp/templates/MealOrderStat.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/templates/Order.html" afterPath="$PROJECT_DIR$/myDjangoApp/templates/Order.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/templates/SignIn.html" afterPath="$PROJECT_DIR$/myDjangoApp/templates/SignIn.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/templates/SignUp.html" afterPath="$PROJECT_DIR$/myDjangoApp/templates/SignUp.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/templates/TE_DevelopingPage.html" afterPath="$PROJECT_DIR$/myDjangoApp/templates/TE_DevelopingPage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/tests.py" afterPath="$PROJECT_DIR$/myDjangoApp/tests.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/views.py" afterPath="$PROJECT_DIR$/myDjangoApp/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite_nginx.conf" afterPath="$PROJECT_DIR$/mysite_nginx.conf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/css/base.css" afterPath="$PROJECT_DIR$/static/admin/css/base.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/css/changelists.css" afterPath="$PROJECT_DIR$/static/admin/css/changelists.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/css/dashboard.css" afterPath="$PROJECT_DIR$/static/admin/css/dashboard.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/css/fonts.css" afterPath="$PROJECT_DIR$/static/admin/css/fonts.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/css/forms.css" afterPath="$PROJECT_DIR$/static/admin/css/forms.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/css/login.css" afterPath="$PROJECT_DIR$/static/admin/css/login.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/css/rtl.css" afterPath="$PROJECT_DIR$/static/admin/css/rtl.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/css/widgets.css" afterPath="$PROJECT_DIR$/static/admin/css/widgets.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/fonts/README.txt" afterPath="$PROJECT_DIR$/static/admin/fonts/README.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/img/LICENSE" afterPath="$PROJECT_DIR$/static/admin/img/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/img/README.txt" afterPath="$PROJECT_DIR$/static/admin/img/README.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/img/calendar-icons.svg" afterPath="$PROJECT_DIR$/static/admin/img/calendar-icons.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/img/gis/move_vertex_off.svg" afterPath="$PROJECT_DIR$/static/admin/img/gis/move_vertex_off.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/img/gis/move_vertex_on.svg" afterPath="$PROJECT_DIR$/static/admin/img/gis/move_vertex_on.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/img/icon-addlink.svg" afterPath="$PROJECT_DIR$/static/admin/img/icon-addlink.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/img/icon-alert.svg" afterPath="$PROJECT_DIR$/static/admin/img/icon-alert.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/img/icon-calendar.svg" afterPath="$PROJECT_DIR$/static/admin/img/icon-calendar.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/img/icon-changelink.svg" afterPath="$PROJECT_DIR$/static/admin/img/icon-changelink.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/img/icon-clock.svg" afterPath="$PROJECT_DIR$/static/admin/img/icon-clock.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/img/icon-deletelink.svg" afterPath="$PROJECT_DIR$/static/admin/img/icon-deletelink.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/img/icon-no.svg" afterPath="$PROJECT_DIR$/static/admin/img/icon-no.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/img/icon-unknown-alt.svg" afterPath="$PROJECT_DIR$/static/admin/img/icon-unknown-alt.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/img/icon-unknown.svg" afterPath="$PROJECT_DIR$/static/admin/img/icon-unknown.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/img/icon-yes.svg" afterPath="$PROJECT_DIR$/static/admin/img/icon-yes.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/img/inline-delete.svg" afterPath="$PROJECT_DIR$/static/admin/img/inline-delete.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/img/search.svg" afterPath="$PROJECT_DIR$/static/admin/img/search.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/img/selector-icons.svg" afterPath="$PROJECT_DIR$/static/admin/img/selector-icons.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/img/sorting-icons.svg" afterPath="$PROJECT_DIR$/static/admin/img/sorting-icons.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/img/tooltag-add.svg" afterPath="$PROJECT_DIR$/static/admin/img/tooltag-add.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/img/tooltag-arrowright.svg" afterPath="$PROJECT_DIR$/static/admin/img/tooltag-arrowright.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/js/SelectBox.js" afterPath="$PROJECT_DIR$/static/admin/js/SelectBox.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/js/SelectFilter2.js" afterPath="$PROJECT_DIR$/static/admin/js/SelectFilter2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/js/actions.js" afterPath="$PROJECT_DIR$/static/admin/js/actions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/js/actions.min.js" afterPath="$PROJECT_DIR$/static/admin/js/actions.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/js/admin/DateTimeShortcuts.js" afterPath="$PROJECT_DIR$/static/admin/js/admin/DateTimeShortcuts.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/js/admin/RelatedObjectLookups.js" afterPath="$PROJECT_DIR$/static/admin/js/admin/RelatedObjectLookups.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/js/calendar.js" afterPath="$PROJECT_DIR$/static/admin/js/calendar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/js/cancel.js" afterPath="$PROJECT_DIR$/static/admin/js/cancel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/js/change_form.js" afterPath="$PROJECT_DIR$/static/admin/js/change_form.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/js/collapse.js" afterPath="$PROJECT_DIR$/static/admin/js/collapse.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/js/collapse.min.js" afterPath="$PROJECT_DIR$/static/admin/js/collapse.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/js/core.js" afterPath="$PROJECT_DIR$/static/admin/js/core.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/js/inlines.js" afterPath="$PROJECT_DIR$/static/admin/js/inlines.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/js/inlines.min.js" afterPath="$PROJECT_DIR$/static/admin/js/inlines.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/js/jquery.init.js" afterPath="$PROJECT_DIR$/static/admin/js/jquery.init.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/js/popup_response.js" afterPath="$PROJECT_DIR$/static/admin/js/popup_response.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/js/prepopulate.js" afterPath="$PROJECT_DIR$/static/admin/js/prepopulate.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/js/prepopulate.min.js" afterPath="$PROJECT_DIR$/static/admin/js/prepopulate.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/js/prepopulate_init.js" afterPath="$PROJECT_DIR$/static/admin/js/prepopulate_init.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/js/timeparse.js" afterPath="$PROJECT_DIR$/static/admin/js/timeparse.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/js/urlify.js" afterPath="$PROJECT_DIR$/static/admin/js/urlify.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/js/vendor/jquery/LICENSE-JQUERY.txt" afterPath="$PROJECT_DIR$/static/admin/js/vendor/jquery/LICENSE-JQUERY.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/js/vendor/jquery/jquery.js" afterPath="$PROJECT_DIR$/static/admin/js/vendor/jquery/jquery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/js/vendor/jquery/jquery.min.js" afterPath="$PROJECT_DIR$/static/admin/js/vendor/jquery/jquery.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/js/vendor/xregexp/LICENSE-XREGEXP.txt" afterPath="$PROJECT_DIR$/static/admin/js/vendor/xregexp/LICENSE-XREGEXP.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/js/vendor/xregexp/xregexp.js" afterPath="$PROJECT_DIR$/static/admin/js/vendor/xregexp/xregexp.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/js/vendor/xregexp/xregexp.min.js" afterPath="$PROJECT_DIR$/static/admin/js/vendor/xregexp/xregexp.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/bootstrap-theme.css" afterPath="$PROJECT_DIR$/static/css/bootstrap-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/static/css/bootstrap-theme.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/bootstrap.css" afterPath="$PROJECT_DIR$/static/css/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/static/css/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/dashboard.css" afterPath="$PROJECT_DIR$/static/css/dashboard.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/signin.css" afterPath="$PROJECT_DIR$/static/css/signin.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/bootstrap.js" afterPath="$PROJECT_DIR$/static/js/bootstrap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/static/js/bootstrap.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/echarts.common.min.js" afterPath="$PROJECT_DIR$/static/js/echarts.common.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/echarts.simple.min.js" afterPath="$PROJECT_DIR$/static/js/echarts.simple.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/ie10-viewport-bug-workaround.js" afterPath="$PROJECT_DIR$/static/js/ie10-viewport-bug-workaround.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/jquery-3.1.0.min.js" afterPath="$PROJECT_DIR$/static/js/jquery-3.1.0.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/jquery.form.js" afterPath="$PROJECT_DIR$/static/js/jquery.form.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/jquery.form.min.js" afterPath="$PROJECT_DIR$/static/js/jquery.form.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/npm.js" afterPath="$PROJECT_DIR$/static/js/npm.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uwsgi_params" afterPath="$PROJECT_DIR$/uwsgi_params" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wsgi.py" afterPath="$PROJECT_DIR$/wsgi.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wsgi_apache.py" afterPath="$PROJECT_DIR$/wsgi_apache.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wsgi_ngnix.py" afterPath="$PROJECT_DIR$/wsgi_ngnix.py" />
+    </list>
+    <list id="ea7bc057-5150-465f-bee5-49069342f74f" name="Failed commit: Default" comment="deploy version with uwsgi+ngnix+ubuntu">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DjangoDemo/.idea/DjangoDemo.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DjangoDemo/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DjangoDemo/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DjangoDemo/.idea/workspace.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
+    <list id="52b0dc75-84fe-4c42-9d60-580e00eacf3f" name="Failed commit: Default (2)" comment="deploy version with uwsgi+ngnix+ubuntu">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/admin/fonts/LICENSE.txt" afterPath="$PROJECT_DIR$/static/admin/fonts/LICENSE.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/signup.css" afterPath="$PROJECT_DIR$/static/css/signup.css" />
+    </list>
+    <list id="58b6dedc-04af-4701-a040-7297d030fc47" name="Failed commit: Default (3)" comment="deploy version with uwsgi+ngnix+ubuntu" />
+    <ignored path="DjangoDemo.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="DjangoDemo" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="MealOrderStat.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/myDjangoApp/templates/MealOrderStat.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3896">
+              <caret line="376" column="37" selection-start-line="376" selection-start-column="37" selection-end-line="376" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/myDjangoApp/templates/CalPlus.html" />
+        <option value="$PROJECT_DIR$/myDjangoApp/templates/Base.html" />
+        <option value="$PROJECT_DIR$/myDjangoApp/templates/CommonBase/CommonHead.html" />
+        <option value="$PROJECT_DIR$/myDjangoApp/templates/CommonBase/LeftNav.html" />
+        <option value="$PROJECT_DIR$/myDjangoApp/forms.py" />
+        <option value="$PROJECT_DIR$/myDjangoApp/static/css/signin.css" />
+        <option value="$PROJECT_DIR$/myDjangoApp/static/css/signup.css" />
+        <option value="$PROJECT_DIR$/myDjangoApp/static/css/bootstrap.css" />
+        <option value="$PROJECT_DIR$/myDjangoApp/static/css/dashboard.css" />
+        <option value="$PROJECT_DIR$/myDjangoApp/templates/CommonBase/Base.html" />
+        <option value="$PROJECT_DIR$/myDjangoApp/templates/SignIn.html" />
+        <option value="$PROJECT_DIR$/myDjangoApp/templates/Index.html" />
+        <option value="$PROJECT_DIR$/myDjangoApp/templates/Order.html" />
+        <option value="$PROJECT_DIR$/myDjangoApp/templates/SignUp.html" />
+        <option value="$PROJECT_DIR$/myDjangoApp/templates/TE_DevelopingPage.html" />
+        <option value="$PROJECT_DIR$/myDjangoApp/templates/AddOrder.html" />
+        <option value="$PROJECT_DIR$/wsgi_apache.py" />
+        <option value="$PROJECT_DIR$/mysite_nginx.conf" />
+        <option value="$PROJECT_DIR$/mysite_uwsgi.ini" />
+        <option value="$PROJECT_DIR$/myDjangoApp/models.py" />
+        <option value="$PROJECT_DIR$/myDjangoApp/templates/CommonBase/TopNavBar.html" />
+        <option value="$PROJECT_DIR$/myDjangoApp/__init__.py" />
+        <option value="$PROJECT_DIR$/myDjangoApp/templates/MealOrderStat.html" />
+        <option value="$PROJECT_DIR$/myDjangoApp/templates/CommonBase/LeftNavBar.html" />
+        <option value="$PROJECT_DIR$/myDjangoApp/views.py" />
+        <option value="$PROJECT_DIR$/myDjangoApp/CommonUtil.py" />
+        <option value="$PROJECT_DIR$/DjangoDemo/settings.py" />
+        <option value="$PROJECT_DIR$/DjangoDemo/urls.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1696" />
+    <option name="height" value="1026" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DjangoDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DjangoDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DjangoDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DjangoDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DjangoDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myDjangoApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DjangoDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DjangoDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myDjangoApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DjangoDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DjangoDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myDjangoApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CommonBase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DjangoDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DjangoDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="collected_static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DjangoDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DjangoDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DjangoDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="E:/PycharmProjects/AutoQdService" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/myDjangoApp/static/Img" />
+      <recent name="$PROJECT_DIR$/myDjangoApp/static/js" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.myDjangoApp">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="DjangoDemo" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="DjangoDemo" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="DjangoDemo" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="DjangoDemo" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="DjangoDemo" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="DjangoDemo" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="DjangoDemo" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="myDjangoApp" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="DjangoDemo" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manage.py" />
+      <option name="PARAMETERS" value="runserver" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Python.myDjangoApp" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e107af59-ce7f-4225-bac0-fde0ecc1d802" name="Default" comment="" />
+      <created>1477300837614</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1477300837614</updated>
+    </task>
+    <task id="LOCAL-00001" summary="deploy version with uwsgi+ngnix+ubuntu">
+      <created>1478093229073</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1478093229073</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22014475" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41185185" sideWeight="0.5029762" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32793522" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42645073" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3362963" sideWeight="0.49702382" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3288889" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39676112" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.conf" />
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="deploy version with uwsgi+ngnix+ubuntu" />
+    <option name="LAST_COMMIT_MESSAGE" value="deploy version with uwsgi+ngnix+ubuntu" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="6" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/myDjangoApp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DjangoDemo/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1560">
+          <caret line="104" column="11" selection-start-line="104" selection-start-column="11" selection-end-line="104" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myDjangoApp/templates/CalPlus.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myDjangoApp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DjangoDemo/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DjangoDemo/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="39" column="18" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myDjangoApp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DjangoDemo/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myDjangoApp/templates/CalPlus.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myDjangoApp/templates/CommonBase/CommonHead.html" />
+    <entry file="file://$PROJECT_DIR$/myDjangoApp/static/js/index.js" />
+    <entry file="file://$PROJECT_DIR$/myDjangoApp/static/js/npm.js" />
+    <entry file="file://$PROJECT_DIR$/myDjangoApp/static/js/ie10-viewport-bug-workaround.js" />
+    <entry file="file://$PROJECT_DIR$/myDjangoApp/static/js/jquery.form.js" />
+    <entry file="file://$PROJECT_DIR$/myDjangoApp/static/css/signup.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1725">
+          <caret line="115" column="0" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myDjangoApp/static/css/signin.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1755">
+          <caret line="117" column="20" selection-start-line="117" selection-start-column="2" selection-end-line="117" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myDjangoApp/static/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="623">
+          <caret line="6800" column="0" selection-start-line="6800" selection-start-column="0" selection-end-line="6800" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myDjangoApp/static/js/echarts.common.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myDjangoApp/static/css/dashboard.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2106">
+          <caret line="117" column="1" selection-start-line="117" selection-start-column="1" selection-end-line="117" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python3.5.1-32/Lib/tokenize.py" />
+    <entry file="file://$PROJECT_DIR$/myDjangoApp/templates/Index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myDjangoApp/templates/SignUp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myDjangoApp/templates/TE_DevelopingPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myDjangoApp/templates/Order.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myDjangoApp/templates/AddOrder.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-36">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wsgi_apache.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wsgi_ngnix.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collected_static/js/npm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DjangoDemo/manage.py" />
+    <entry file="file://$PROJECT_DIR$/django-uwsgi.xml" />
+    <entry file="file://$PROJECT_DIR$/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite_nginx.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite_uwsgi.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myDjangoApp/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/tokenize.py" />
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/pagination/middleware.py" />
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/core/handlers/base.py" />
+    <entry file="file://$PROJECT_DIR$/DjangoDemo/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myDjangoApp/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myDjangoApp/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myDjangoApp/templates/CommonBase/TopNavBar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myDjangoApp/templates/CommonBase/LeftNavBar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myDjangoApp/CommonUtil.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="104" column="29" selection-start-line="104" selection-start-column="29" selection-end-line="104" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myDjangoApp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DjangoDemo/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="140" column="42" selection-start-line="140" selection-start-column="42" selection-end-line="140" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myDjangoApp/templates/CommonBase/Base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myDjangoApp/templates/SignIn.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DjangoDemo/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="36" column="49" selection-start-line="36" selection-start-column="49" selection-end-line="36" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myDjangoApp/templates/MealOrderStat.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3896">
+          <caret line="376" column="37" selection-start-line="376" selection-start-column="37" selection-end-line="376" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -1,0 +1,495 @@
+{% extends 'CommonBase/Base.html' %}
+
+
+{% block title %} Meal Order Statistic {% endblock %}
+
+
+{% block customcss %}
+{% load static %}
+<link href="{% static 'css/dashboard.css' %}" rel="stylesheet">
+<script src="{% static 'js/echarts.common.min.js' %}"></script>
+{% endblock %}
+
+
+{% block topNav %}
+{% include 'CommonBase/TopNavBar.html' %}
+{% endblock %}
+
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+
+        {% include 'CommonBase/LeftNavBar.html' %}
+
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <h2 class="sub-header">订餐统计</h2>
+            <button type="button" class="btn btn-primary" id="newOrderAppBtn" data-toggle="modal"
+                    onclick="OpenAddOrder()">发起新的订餐统计
+            </button>
+            <div id="bs_alert" class="alert alert-dismissible fade in hidden" role="alert">
+                <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span
+                        class="sr-only">Close</span></button>
+                <strong id="bs_alert_msg"></strong>
+            </div>
+            <!--<div class="alert alert-success" role="alert">添加成功!</div>-->
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>序号</th>
+                        <th>标题</th>
+                        <th>发起时间</th>
+                        <th>发起人</th>
+                        <th>状态</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for orderApp in orderApps %}
+                    {% if orderApp.status is not None and orderApp.status == 1 %}
+                    <tr class="success">
+                        {% else %}
+                    <tr>
+                        {% endif %}
+                        <td>{{ forloop.counter }}</td>
+                        <td>{{ orderApp.title }}</td>
+                        <td>{{ orderApp.operatedate }}</td>
+                        <td>{{ orderApp.operateusername }}</td>
+                        <td>
+                            {% if orderApp.status is not None and orderApp.status == 1 %}
+                            <span class="sp-success">进行中</span>
+                            {% else %}
+                            <span class="sp-normal">已结束</span>{% endif %}
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-default btn-xs" data-toggle="modal"
+                                    onclick="OpenOrder('{{orderApp.id}}','{{orderApp.restname}}','{{orderApp.status}}')"><span
+                                    class="glyphicon glyphicon-plus"></span>预定
+                            </button>
+                            <button type="button" class="btn btn-default btn-xs"
+                                    onclick="OpenOrderDetail('{{orderApp.id}}','{{orderApp.restname}}')"><span
+                                    class="glyphicon glyphicon-search"></span>查看
+                            </button>
+                            {% if orderApp.status is not None and orderApp.status == 1 %}
+                            <button type="button" class="btn btn-default btn-xs"
+                                    onclick="SetOrderAppFinish('{{orderApp.id}}','{{orderApp.operateusername}}')"><span
+                                    class="glyphicon glyphicon-check"></span>结束
+                            </button>
+                            {% endif %}
+
+                        </td>
+                    </tr>
+                    {% endfor %}
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- AddOrderStatModal Start-->
+<div class="modal fade" id="AddOrderStatModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" style="height:460px;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
+                        class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="newOrderStat">新增订餐统计</h4>
+            </div>
+            <div class="modal-body" style="height:460px;">
+                <iframe name="add_order_iframe_name" frameBorder="0" src="{% url 'dialog_add_order' %}" width="100%"
+                        height="100%"></iframe>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" onclick="AddOrder()">保存</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- AddOrderStatModal End-->
+
+
+<!-- OrderModal Start-->
+<div class="modal fade" id="OrderModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="height:350px;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
+                        class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="NewOrder"></h4>
+            </div>
+            <div class="modal-body" style="height:350px;">
+                <iframe name="order_iframe_name" frameBorder="0" src="{% url 'dialog_order' %}" width="100%"
+                        height="100%"></iframe>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" onclick="Order()">保存</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- OrderModal End-->
+
+<!-- OrderDetailModal Start-->
+<div class="modal fade" id="OrderDetailModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
+                        class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="OrderDetail">预定详情</h4>
+            </div>
+            <div class="modal-body">
+
+                <div class="panel panel-primary">
+                    <div class="panel-heading">分类统计</div>
+                    <div class="panel-body">
+                        <div id="echarts_meal_order_stat" style="width: 360px;height:300px;float:left;"></div>
+                        <ul style="width:140px;float:left;margin-top:50px;" id="list_meal_order_stat">
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="panel panel-primary">
+                    <!-- Default panel contents -->
+                    <div class="panel-heading">预定列表</div>
+                    <!--<div class="panel-body">-->
+                        <!--<p>预定列表</p>-->
+                    <!--</div>-->
+
+                    <!-- Table -->
+                    <div id="orderTable" class="table-responsive">
+
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="modal-footer">
+                <!--<button type="button" class="btn btn-primary" onclick="Order()">保存</button>-->
+                <!--<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>-->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- OrderDetailModal End-->
+
+
+<!-- AlertModalWithRefresh Start-->
+<div class="modal fade" id="AlertModalWithRefresh" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
+                        class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="AlertMsgWithRefresh">操作结果</h4>
+            </div>
+            <div class="modal-body">
+                <p><span id="AlertMsgBodyWithRefresh"></span></p>
+            </div>
+            <div class="modal-footer">
+                <!--<button type="button" class="btn btn-primary" onclick="Order()">保存</button>-->
+                <button type="button" class="btn btn-primary" onclick="javascript:location.reload();">关闭</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- AlertModalWithRefresh End-->
+
+<!-- AlertModal Start-->
+<div class="modal fade" id="AlertModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
+                        class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="AlertMsg">操作结果</h4>
+            </div>
+            <div class="modal-body">
+                <p><span id="AlertMsgBody"></span></p>
+            </div>
+            <div class="modal-footer">
+                <!--<button type="button" class="btn btn-primary" onclick="Order()">保存</button>-->
+                <button type="button" class="btn btn-primary" onclick="closeOrderAlertDialog();">关闭</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- AlertModal End-->
+
+{% endblock %}
+
+
+{% block bodyjs %}
+
+<script>
+
+    var indexDict = {{ indexDict|safe }};
+    var index = indexDict['index'];
+    //alert(index);
+
+	$(".nav-sidebar > li").each(function(){
+		if($(this).attr('index')==index){
+			$(this).addClass("active");
+		}else{
+		    $(this).removeClass("active");
+		}
+	});
+
+	$.ajaxSetup({
+    	data: {csrfmiddlewaretoken: '{{ csrf_token }}' },
+	});
+
+	function afterSubmitAddOrder(ajaxResponse){
+	    //$('#bs_alert').removeClass('hidden');
+	    //$('#bs_alert').removeClass('alert-success');
+		//$('#bs_alert').removeClass('alert-danger');
+		if(ajaxResponse['Flag']=='Y'){
+			//alert('添加成功!');
+			$('#AlertMsgBodyWithRefresh').html('添加成功!');
+			$('#AlertModalWithRefresh').modal('show');
+			//$('#bs_alert').addClass('alert-success');
+			//$('#bs_alert_msg').html('添加成功!');
+		}else if(ajaxResponse['Flag']=='N'){
+		    //alert(ajaxResponse['Msg']);
+		    $('#AlertMsgBodyWithRefresh').html(ajaxResponse['Msg']);
+			$('#AlertModalWithRefresh').modal('show');
+			//$('#bs_alert').addClass('alert-danger');
+			//$('#bs_alert_msg').html('添加失败!|'+ajaxResponse['Msg']);
+		}else{
+			//alert('添加失败!');
+			$('#AlertMsgBodyWithRefresh').html('添加失败!');
+			$('#AlertModalWithRefresh').modal('show');
+			//$('#bs_alert').addClass('alert-danger');
+			//$('#bs_alert_msg').html('添加失败!');
+		}
+
+	}
+
+	function afterSubmitOrder(ajaxResponse){
+		if(ajaxResponse['Flag']=='Y'){
+			$('#AlertMsgBody').html('添加成功!');
+			$('#AlertModal').modal('show');
+		}else if(ajaxResponse['Flag']=='N'){
+		    $('#AlertMsgBody').html(ajaxResponse['Msg']);
+			$('#AlertModal').modal('show');
+		}else{
+			$('#AlertMsgBody').html('添加失败!');
+			$('#AlertModal').modal('show');
+		}
+
+	}
+
+	function closeOrderAlertDialog(){
+	    $('#AlertModal').modal('toggle');
+	}
+
+	function OpenAddOrder(){
+	    $(window.frames["add_order_iframe_name"].document).find("#title").val(null);
+	    $(window.frames["add_order_iframe_name"].document).find("#rest_name").val(null);
+	    $(window.frames["add_order_iframe_name"].document).find("#mealname").val(null);
+	    $(window.frames["add_order_iframe_name"].document).find("#remark").val(null);
+		$('#AddOrderStatModal').modal('show')
+	}
+
+	function AddOrder(){
+	    var title  = $(window.frames["add_order_iframe_name"].document).find("#title").val();
+	    var restName  = $(window.frames["add_order_iframe_name"].document).find("#rest_name").val();
+	    var mealName  = $(window.frames["add_order_iframe_name"].document).find("#mealname").val();
+	    var remark  = $(window.frames["add_order_iframe_name"].document).find("#remark").val();
+	    //alert(title+restName+mealName+remark);
+	    if(title ==null || title =='' ){
+	        alert('请输入标题');
+	        return;
+	    }
+	    if(restName ==null || restName ==''){
+	        alert('请输入餐厅名称');
+	        return;
+	    }
+	    if(mealName ==null || mealName =='' ){
+	        alert('请输入美食名称');
+	        return;
+	    }
+	    $.ajax({
+            type: 'POST',
+            url: "{% url 'ajax_add_order' %}",
+            data: {"title":title,"restName":restName,"mealName":mealName,"remark":remark},
+            success: afterSubmitAddOrder
+        });
+		$('#AddOrderStatModal').modal('toggle')
+	}
+
+	function OpenOrder(row_id,restName,status){
+	    //alert(status);
+	    if('0' == status){
+	        $('#AlertMsgBody').html('已经结束啦,下次早点哟!');
+			$('#AlertModal').modal('show');
+			reyurn;
+	    }
+	    //alert(rowid+restName);
+	    $("#NewOrder").html("预定|   餐厅:"+restName);
+	    $(window.frames["order_iframe_name"].document).find("#rowid").val(row_id);
+        $(window.frames["order_iframe_name"].document).find("#mealName").empty();
+
+	    $.get("{% url 'ajax_get_mealnames' %}?rowId="+row_id,function(rtnValue){
+            if(rtnValue['Flag']=='Y'){
+                var s = rtnValue['Data'].split(';');
+                if(s != null && s.length > 0){
+                    for(var i=0;i<s.length;i++){
+                        if(s[i]!=null&&s[i]!='')$(window.frames["order_iframe_name"].document).find("#mealName").append("<option>"+s[i]+"</option>");
+                    }
+                }
+            }
+        });
+
+	    $(window.frames["order_iframe_name"].document).find("#remark").val(null);
+	    $('#OrderModal').modal('show')
+	}
+
+	function Order(){
+	    var mealName  = $(window.frames["order_iframe_name"].document).find("#mealName").val();
+	    var orderNum  = $(window.frames["order_iframe_name"].document).find("#orderNum").val();
+	    var remark  = $(window.frames["order_iframe_name"].document).find("#remark").val();
+	    var rowId = $(window.frames["order_iframe_name"].document).find("#rowid").val();
+
+	    if(mealName ==null || mealName =='' ){
+	        alert('请选择美食!');
+	        return;
+	    }
+	    if(orderNum ==null || orderNum ==''){
+	        alert('请选择预定数量!');
+	        return;
+	    }
+
+	    //alert(mealName+orderNum+remark);
+	    $.ajax({
+            type: 'POST',
+            url: "{% url 'ajax_order' %}",
+            data: {"mealName":mealName,"orderNum":orderNum,"remark":remark,"rowId":rowId},
+            success: afterSubmitOrder
+        });
+        $('#OrderModal').modal('toggle')
+	}
+
+	function OpenOrderDetail(row_id,restName){
+        $.get("{% url 'ajax_get_orderstat_echartsdata' %}?rowId="+row_id,function(rtnValue){
+            //alert(rtnValue['Flag']);
+            if(rtnValue['Flag']=='Y'){
+                // 基于准备好的dom，初始化echarts实例
+                var myChart = echarts.init(document.getElementById('echarts_meal_order_stat'));
+                // 指定图表的配置项和数据
+                var option = {
+                    title: {
+                        left: 'center',
+                        top: 20,
+                        textStyle: {
+                            color: '#000'
+                        }
+                    },
+
+                    tooltip : {
+                        trigger: 'item',
+                        formatter: "{a} <br/>{b} : {c} ({d}%)"
+                    },
+
+                    visualMap: {
+                        show: false,
+                        min: 80,
+                        max: 600,
+                        inRange: {
+                            colorLightness: [0, 1]
+                        }
+                    },
+                    series : [
+                        {
+                            name:'订餐统计',
+                            type:'pie',
+                            radius : '55%',
+                            center: ['50%', '50%'],
+                            data:rtnValue['Data'].sort(function (a, b) { return a.value - b.value}),
+                            roseType: 'angle',
+                            label: {
+                                normal: {
+                                    textStyle: {
+                                        color: 'rgba(0, 0, 0, 1)'
+                                    }
+                                }
+                            },
+                            labelLine: {
+                                normal: {
+                                    lineStyle: {
+                                    color: 'rgba(0, 0, 0, 1)'
+                                    },
+                                    smooth: 0.2,
+                                    length: 10,
+                                    length2: 20
+                                }
+                            },
+                            itemStyle: {
+                                normal: {
+                                    color: '#c23531',
+                                    shadowBlur: 200,
+                                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+                                }
+                            }
+                        }
+                    ]
+                };
+                // 使用刚指定的配置项和数据显示图表。
+                myChart.setOption(option);
+            }
+        });
+
+        $('#orderTable').load("{% url 'ajax_get_orderdetail_tables' %}?rowId="+row_id);
+
+        $('#list_meal_order_stat').load("{% url 'ajax_get_orderstat_list' %}?rowId="+row_id);
+
+	    $('#OrderDetailModal').modal('show')
+	}
+
+
+    function SetOrderAppFinish(row_id,operateusername){
+        var userName = $('#icon_group_userName').html().trim();
+        if(userName != null && userName != '' && userName != operateusername){
+            $('#AlertMsgBody').html('不能结束其他人发起的订餐统计!');
+			$('#AlertModal').modal('show');
+			reyurn;
+        }
+        $.get("{% url 'ajax_set_orderapp_finished' %}?rowId="+row_id,function(rtnValue){
+            //alert(rtnValue['Flag']+rtnValue['Msg']);
+            if(rtnValue['Flag']=='Y'){
+                location.reload();
+            }else{
+                $('#AlertMsgBody').html('添加失败!');
+			    $('#AlertModal').modal('show');
+            }
+        });
+
+    }
+
+
+
+
+
+
+
+
+</script>
+{% endblock %}
+
+
+
+
+
+
+
+
+
