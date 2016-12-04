@@ -1,51 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e107af59-ce7f-4225-bac0-fde0ecc1d802" name="Default" comment="deploy version with uwsgi+ngnix+ubuntu">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myDjangoApp/static/css/bootstrap-datetimepicker.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myDjangoApp/static/js/bootstrap-datetimepicker.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myDjangoApp/static/js/bootstrap-datetimepicker.zh-CN.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myDjangoApp/static/js/dt-util.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myDjangoApp/templates/AddWeekReport.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myDjangoApp/templates/WeekReport.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/Img/Developing.gif" afterPath="$PROJECT_DIR$/collected_static/Img/Developing.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/Img/HeadIconFemale46-46.png" afterPath="$PROJECT_DIR$/collected_static/Img/HeadIconFemale46-46.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/Img/HeadIconMale46-46.png" afterPath="$PROJECT_DIR$/collected_static/Img/HeadIconMale46-46.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/Img/HeadIcon_Female.png" afterPath="$PROJECT_DIR$/collected_static/Img/HeadIcon_Female.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/Img/bg-1.jpg" afterPath="$PROJECT_DIR$/collected_static/Img/bg-1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/Img/bg-2.jpg" afterPath="$PROJECT_DIR$/collected_static/Img/bg-2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/Img/bg-3.jpg" afterPath="$PROJECT_DIR$/collected_static/Img/bg-3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/collected_static/fonts/glyphicons-halflings-regular.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/collected_static/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/collected_static/fonts/glyphicons-halflings-regular.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/fonts/glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/collected_static/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    <list default="true" id="e107af59-ce7f-4225-bac0-fde0ecc1d802" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DjangoDemo/settings.py" afterPath="$PROJECT_DIR$/DjangoDemo/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DjangoDemo/urls.py" afterPath="$PROJECT_DIR$/DjangoDemo/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/css/bootstrap-theme.css" afterPath="$PROJECT_DIR$/collected_static/css/bootstrap-theme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/css/bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/collected_static/css/bootstrap-theme.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/css/bootstrap.css" afterPath="$PROJECT_DIR$/collected_static/css/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/collected_static/css/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/css/dashboard.css" afterPath="$PROJECT_DIR$/collected_static/css/dashboard.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/css/signin.css" afterPath="$PROJECT_DIR$/collected_static/css/signin.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/css/signup.css" afterPath="$PROJECT_DIR$/collected_static/css/signup.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/collected_static/fonts/glyphicons-halflings-regular.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/js/bootstrap.js" afterPath="$PROJECT_DIR$/collected_static/js/bootstrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/collected_static/js/bootstrap.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/js/echarts.common.min.js" afterPath="$PROJECT_DIR$/collected_static/js/echarts.common.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/js/echarts.simple.min.js" afterPath="$PROJECT_DIR$/collected_static/js/echarts.simple.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/js/ie10-viewport-bug-workaround.js" afterPath="$PROJECT_DIR$/collected_static/js/ie10-viewport-bug-workaround.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/js/jquery-3.1.0.min.js" afterPath="$PROJECT_DIR$/collected_static/js/jquery-3.1.0.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/js/jquery.form.js" afterPath="$PROJECT_DIR$/collected_static/js/jquery.form.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/js/jquery.form.min.js" afterPath="$PROJECT_DIR$/collected_static/js/jquery.form.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/collected_static/js/npm.js" afterPath="$PROJECT_DIR$/collected_static/js/npm.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/CommonUtil.py" afterPath="$PROJECT_DIR$/myDjangoApp/CommonUtil.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/models.py" afterPath="$PROJECT_DIR$/myDjangoApp/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/static/css/dashboard.css" afterPath="$PROJECT_DIR$/myDjangoApp/static/css/dashboard.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/templates/CommonBase/LeftNavBar.html" afterPath="$PROJECT_DIR$/myDjangoApp/templates/CommonBase/LeftNavBar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/templates/CommonBase/TopNavBar.html" afterPath="$PROJECT_DIR$/myDjangoApp/templates/CommonBase/TopNavBar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/templates/MealOrderStat.html" afterPath="$PROJECT_DIR$/myDjangoApp/templates/MealOrderStat.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/templates/WeekReport.html" afterPath="$PROJECT_DIR$/myDjangoApp/templates/WeekReport.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myDjangoApp/views.py" afterPath="$PROJECT_DIR$/myDjangoApp/views.py" />
     </list>
     <list id="ea7bc057-5150-465f-bee5-49069342f74f" name="Failed commit: Default" comment="deploy version with uwsgi+ngnix+ubuntu" />
@@ -69,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DjangoDemo/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+            <state relative-caret-position="438">
+              <caret line="137" column="24" selection-start-line="137" selection-start-column="24" selection-end-line="137" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -92,8 +50,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myDjangoApp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="307" column="57" selection-start-line="307" selection-start-column="57" selection-end-line="307" selection-end-column="57" />
+            <state relative-caret-position="123">
+              <caret line="142" column="34" selection-start-line="142" selection-start-column="24" selection-end-line="142" selection-end-column="34" />
               <folding>
                 <element signature="e#15#26#0" expanded="true" />
               </folding>
@@ -101,11 +59,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WeekReport.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="WeekReport.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/myDjangoApp/templates/WeekReport.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="35" column="55" selection-start-line="35" selection-start-column="55" selection-end-line="35" selection-end-column="55" />
+            <state relative-caret-position="177">
+              <caret line="521" column="0" selection-start-line="521" selection-start-column="0" selection-end-line="521" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
@@ -169,8 +127,8 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DjangoDemo/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="34" column="99" selection-start-line="34" selection-start-column="99" selection-end-line="34" selection-end-column="99" />
+            <state relative-caret-position="255">
+              <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -221,9 +179,9 @@
         <option value="$PROJECT_DIR$/myDjangoApp/CommonUtil.py" />
         <option value="$PROJECT_DIR$/myDjangoApp/static/js/dt-util.js" />
         <option value="$PROJECT_DIR$/myDjangoApp/templates/AddWeekReport.html" />
+        <option value="$PROJECT_DIR$/DjangoDemo/settings.py" />
         <option value="$PROJECT_DIR$/myDjangoApp/views.py" />
         <option value="$PROJECT_DIR$/myDjangoApp/templates/WeekReport.html" />
-        <option value="$PROJECT_DIR$/DjangoDemo/settings.py" />
       </list>
     </option>
   </component>
@@ -653,7 +611,14 @@
       <option name="project" value="LOCAL" />
       <updated>1478093229073</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add weekRepot module">
+      <created>1480841067844</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1480841067844</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -696,7 +661,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="deploy version with uwsgi+ngnix+ubuntu" />
-    <option name="LAST_COMMIT_MESSAGE" value="deploy version with uwsgi+ngnix+ubuntu" />
+    <MESSAGE value="add weekRepot module" />
+    <option name="LAST_COMMIT_MESSAGE" value="add weekRepot module" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -838,6 +804,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -846,6 +813,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="620" column="33" selection-start-line="620" selection-start-column="33" selection-end-line="620" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -952,22 +920,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DjangoDemo/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="34" column="99" selection-start-line="34" selection-start-column="99" selection-end-line="34" selection-end-column="99" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myDjangoApp/static/js/dt-util.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/wsgiref/simple_server.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
@@ -994,27 +946,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myDjangoApp/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="307" column="57" selection-start-line="307" selection-start-column="57" selection-end-line="307" selection-end-column="57" />
-          <folding>
-            <element signature="e#15#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myDjangoApp/templates/WeekReport.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="35" column="55" selection-start-line="35" selection-start-column="55" selection-end-line="35" selection-end-column="55" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/myDjangoApp/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1023,11 +954,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/myDjangoApp/static/js/dt-util.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DjangoDemo/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/DjangoDemo/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+        <state relative-caret-position="438">
+          <caret line="137" column="24" selection-start-line="137" selection-start-column="24" selection-end-line="137" selection-end-column="24" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myDjangoApp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="142" column="34" selection-start-line="142" selection-start-column="24" selection-end-line="142" selection-end-column="34" />
+          <folding>
+            <element signature="e#15#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myDjangoApp/templates/WeekReport.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="521" column="0" selection-start-line="521" selection-start-column="0" selection-end-line="521" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

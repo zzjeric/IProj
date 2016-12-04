@@ -301,7 +301,7 @@ def ajax_get_orderstat_list(request):
 def weekreport_xlsx_download(request):
     option = request.GET.get('option', 'all')
     dtRange = request.GET.get('dtRange', None)
-    if dtRange is not None:
+    if (option == 'pre' or option == 'cur') and dtRange is not None:
         weekReports = WeekReport.objects.filter(dtRange=dtRange).order_by('userName', '-operatedate')
     else:
         weekReports = WeekReport.objects.all().order_by('userName', '-operatedate')
