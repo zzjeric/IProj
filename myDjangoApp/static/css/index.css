@@ -1,10 +1,14 @@
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}input,textarea,select{*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
+ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}
+abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}input,textarea,select{*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}
     .wraper{
         width:766px;
         margin:0 auto;
     height:484px;
   }
-  body{ margin:0; padding:0; height:6985px;/*_height:7091px;*/
+  body{ margin:0; padding:0; height:800px;/*_height:7091px;*/
   background: url(http://p6.qhimg.com/d/inn/e2785445/backbg.png) repeat-x; /* Old browsers */
   background: -moz-linear-gradient(top,  #5f9dde 0%, #8fbfee 100%); /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5f9dde), color-stop(100%,#8fbfee)); /* Chrome,Safari4+ */
@@ -14,7 +18,7 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input
   background: linear-gradient(to bottom,  #5f9dde 0%,#8fbfee 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5f9dde', endColorstr='#8fbfee',GradientType=0 ); /* IE6-9 */
   }
-  @media screen and (max-height: 3681px) {
+  @media screen and (max-height: 800px) {
     body{
     background: url(http://p6.qhimg.com/d/inn/e2785445/backbg.png) repeat-x; /* Old browsers */
     background: -moz-linear-gradient(top,  #5f9dde 0%, #8fbfee 100%); /* FF3.6+ */

@@ -36,7 +36,7 @@ def sign_in(request):
             password = form.cleaned_data['password']
             result = validateSignIn(request, username, password)
             if result["Flag"] == "Y":
-                return HttpResponseRedirect(reverse('meal_order_stat'))
+                return HttpResponseRedirect(reverse('index'))
             else:
                 return render(
                     request, 'SignIn.html', {
@@ -58,7 +58,7 @@ def sign_up(request):
             if result["Flag"] == "Y":
                 request.session['isLogin'] = True
                 request.session['username'] = username
-                return HttpResponseRedirect(reverse('meal_order_stat'))
+                return HttpResponseRedirect(reverse('index'))
             else:
                 return render(
                     request, 'SignUp.html', {
