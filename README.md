@@ -10,7 +10,7 @@ A simple content management website powered by django
 
 ## 更新日志
 
-*V1.1-2016年12月04日*
+**V1.1-2016年12月04日**
 
 更新：
 
@@ -26,7 +26,7 @@ A simple content management website powered by django
 
 2.优化日期显示格式
 
-*V1.0-2016年11月04日*
+**V1.0-2016年11月04日**
 
 更新：
 
