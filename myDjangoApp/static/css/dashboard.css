@@ -117,7 +117,7 @@ font-weight: bold;
 font-weight: bold;
 }
 
-#icon_group_userName{
+.span-user-name{
 color:#fff;
 font-size:15px;
 margin-left:8px;

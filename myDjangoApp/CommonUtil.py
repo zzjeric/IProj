@@ -51,6 +51,13 @@ def AddOrderApplication(orderApp):
     except Exception as e:
         return {"Flag": "N", "Msg": "Error: "+e}
 
+def AddWeekReport(weekReport):
+    try:
+        weekReport.save()
+        return {"Flag": "Y", "Msg": "Success"}
+    except Exception as e:
+        return {"Flag": "N", "Msg": "Error: "+e}
+
 
 def AddOrderInfo(order):
     try:
@@ -130,4 +137,16 @@ def initOrderStatList(rowid):
             # result += "<li>"+s['mealname']+"<span class=\"badge\">"+s['dcount']+"</span></li>"
             result += "<li><button style=\"margin:2px;\" class=\"btn btn-primary\" type=\"button\">  " + s['mealname'] + "  <span class=\"badge\">" + str(s['dcount']) + "</span></button></li>"
     return result
+
+
+def file_iterator(file_name, chunk_size=512):
+    with open(file_name, "rb") as f:
+        while True:
+            c = f.read(chunk_size)
+            if c:
+                yield c
+            else:
+                break
+
+
 

@@ -1,7 +1,7 @@
 {% extends 'CommonBase/Base.html' %}
 
 
-{% block title %} Meal Order Statistic {% endblock %}
+{% block title %} Week Report {% endblock %}
 
 
 {% block customcss %}
@@ -23,10 +23,21 @@
         {% include 'CommonBase/LeftNavBar.html' %}
 
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-            <h2 class="sub-header">订餐统计</h2>
-            <button type="button" class="btn btn-primary" id="newOrderAppBtn" data-toggle="modal"
-                    onclick="OpenAddOrder()">发起新的订餐统计
+            <h2 class="sub-header">我的周报</h2>
+            <button type="button" class="btn btn-primary" id="newWeekReportBtn" data-toggle="modal"
+                    onclick="OpenAddWeekReport()">周报填写
             </button>
+            <div class="btn-group">
+                <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+                    导出Excel <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a onclick="ExportExcel('cur')">导出本周</a></li>
+                    <li><a onclick="ExportExcel('pre')">导出上周</a></li>
+                    <li class="divider"></li>
+                    <li><a onclick="ExportExcel('all')">导出全部</a></li>
+                </ul>
+            </div>
             <div id="bs_alert" class="alert alert-dismissible fade in hidden" role="alert">
                 <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span
                         class="sr-only">Close</span></button>
@@ -38,46 +49,28 @@
                     <thead>
                     <tr>
                         <th>序号</th>
-                        <th>标题</th>
-                        <th>发起时间</th>
-                        <th>发起人</th>
-                        <th>状态</th>
-                        <th>操作</th>
+                        <th>姓名</th>
+                        <th>时间</th>
+                        <th>项目</th>
+                        <th>任务</th>
+                        <th>计划完成时间</th>
+                        <th>完成状态</th>
                     </tr>
                     </thead>
                     <tbody>
-                    {% for orderApp in orderApps %}
-                    {% if orderApp.status is not None and orderApp.status == 1 %}
-                    <tr class="success">
-                        {% else %}
+                    {% for weekReport in weekReports %}
                     <tr>
-                        {% endif %}
                         <td>{{ forloop.counter }}</td>
-                        <td>{{ orderApp.title }}</td>
-                        <td>{{ orderApp.operatedate|date:"Y-m-d H:i:s" }}</td>
-                        <td>{{ orderApp.operateusername }}</td>
-                        <td>
-                            {% if orderApp.status is not None and orderApp.status == 1 %}
-                            <span class="sp-success">进行中</span>
+                        <td>{{ weekReport.userName }}</td>
+                        <td>{{ weekReport.dtRange }}</td>
+                        <td>{{ weekReport.prjName }}</td>
+                        <td>{{ weekReport.taskName }}</td>
+                        <td>{{ weekReport.planEndDt|date:"Y-m-d" }}</td>
+                        <td>{% if weekReport.status == 1 %}
+                            <span class="sp-success">已完成</span>
                             {% else %}
-                            <span class="sp-normal">已结束</span>{% endif %}
-                        </td>
-                        <td>
-                            <button type="button" class="btn btn-default btn-xs" data-toggle="modal"
-                                    onclick="OpenOrder('{{orderApp.id}}','{{orderApp.restname}}','{{orderApp.status}}')"><span
-                                    class="glyphicon glyphicon-plus"></span>预定
-                            </button>
-                            <button type="button" class="btn btn-default btn-xs"
-                                    onclick="OpenOrderDetail('{{orderApp.id}}','{{orderApp.restname}}')"><span
-                                    class="glyphicon glyphicon-search"></span>查看
-                            </button>
-                            {% if orderApp.status is not None and orderApp.status == 1 %}
-                            <button type="button" class="btn btn-default btn-xs"
-                                    onclick="SetOrderAppFinish('{{orderApp.id}}','{{orderApp.operateusername}}')"><span
-                                    class="glyphicon glyphicon-check"></span>结束
-                            </button>
+                            <span class="sp-normal">未完成</span>
                             {% endif %}
-
                         </td>
                     </tr>
                     {% endfor %}
@@ -127,28 +120,29 @@
     </div>
 </div>
 
-<!-- AddOrderStatModal Start-->
-<div class="modal fade" id="AddOrderStatModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+<!-- AddWeekReportModal Start-->
+<div class="modal fade" id="AddWeekReportModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
      aria-hidden="true">
-    <div class="modal-dialog" style="height:460px;">
+    <div class="modal-dialog" style="height:550px;">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
                         class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="newOrderStat">新增订餐统计</h4>
+                <h4 class="modal-title" id="newOrderStat">周报填写</h4>
             </div>
-            <div class="modal-body" style="height:460px;">
-                <iframe name="add_order_iframe_name" frameBorder="0" src="{% url 'dialog_add_order' %}" width="100%"
+            <div class="modal-body" style="height:550px;">
+                <iframe name="add_week_report_iframe_name" frameBorder="0" src="{% url 'dialog_add_weekreport' %}"
+                        width="100%"
                         height="100%"></iframe>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary" onclick="AddOrder()">保存</button>
+                <button type="button" class="btn btn-primary" onclick="AddWeekReport()">保存</button>
                 <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
             </div>
         </div>
     </div>
 </div>
-<!-- AddOrderStatModal End-->
+<!-- AddWeekReportModal End-->
 
 
 <!-- OrderModal Start-->
@@ -268,6 +262,8 @@
 
 {% block bodyjs %}
 
+{% load static %}
+<script src="{% static 'js/dt-util.js' %}" charset="UTF-8"></script>
 <script>
 
     var indexDict = {{ indexDict|safe }};
@@ -286,7 +282,7 @@
     	data: {csrfmiddlewaretoken: '{{ csrf_token }}' },
 	});
 
-	function afterSubmitAddOrder(ajaxResponse){
+	function afterSubmitAddWeekReport(ajaxResponse){
 	    //$('#bs_alert').removeClass('hidden');
 	    //$('#bs_alert').removeClass('alert-success');
 		//$('#bs_alert').removeClass('alert-danger');
@@ -330,39 +326,50 @@
 	    $('#AlertModal').modal('toggle');
 	}
 
-	function OpenAddOrder(){
-	    $(window.frames["add_order_iframe_name"].document).find("#title").val(null);
-	    $(window.frames["add_order_iframe_name"].document).find("#rest_name").val(null);
-	    $(window.frames["add_order_iframe_name"].document).find("#mealname").val(null);
-	    $(window.frames["add_order_iframe_name"].document).find("#remark").val(null);
-		$('#AddOrderStatModal').modal('show')
+	function OpenAddWeekReport(){
+	    //$(window.frames["add_week_report_iframe_name"].document).find("#dtRange").val(null);
+	    $(window.frames["add_week_report_iframe_name"].document).find("#prjName").val(null);
+	    $(window.frames["add_week_report_iframe_name"].document).find("#taskName").val(null);
+	    $(window.frames["add_week_report_iframe_name"].document).find("#planEndDt").val(null);
+	    $(window.frames["add_week_report_iframe_name"].document).find("#status").val(1);
+		$('#AddWeekReportModal').modal('show')
 	}
 
-	function AddOrder(){
-	    var title  = $(window.frames["add_order_iframe_name"].document).find("#title").val();
-	    var restName  = $(window.frames["add_order_iframe_name"].document).find("#rest_name").val();
-	    var mealName  = $(window.frames["add_order_iframe_name"].document).find("#mealname").val();
-	    var remark  = $(window.frames["add_order_iframe_name"].document).find("#remark").val();
+	function AddWeekReport(){
+	    var dtRange  = $(window.frames["add_week_report_iframe_name"].document).find("#dtRange").val();
+	    var prjName  = $(window.frames["add_week_report_iframe_name"].document).find("#prjName").val();
+	    var taskName  = $(window.frames["add_week_report_iframe_name"].document).find("#taskName").val();
+	    var planEndDt  = $(window.frames["add_week_report_iframe_name"].document).find("#planEndDt").val();
+	    var status  = $(window.frames["add_week_report_iframe_name"].document).find("#status").val();
 	    //alert(title+restName+mealName+remark);
-	    if(title ==null || title =='' ){
-	        alert('请输入标题');
+	    if(dtRange ==null || dtRange =='' ){
+	        alert('请输入时间范围');
 	        return;
 	    }
-	    if(restName ==null || restName ==''){
-	        alert('请输入餐厅名称');
+	    if(prjName ==null || prjName ==''){
+	        alert('请输入项目名称');
 	        return;
 	    }
-	    if(mealName ==null || mealName =='' ){
-	        alert('请输入美食名称');
+	    if(taskName ==null || taskName =='' ){
+	        alert('请输入任务名称');
 	        return;
 	    }
+	    if(planEndDt ==null || planEndDt =='' ){
+	        alert('请输入计划完成时间');
+	        return;
+	    }
+	    if(status ==null || status =='' ){
+	        alert('请输入完成状态');
+	        return;
+	    }
+	    dtRange = dtRange.replace(/[^0-9\-\/]/g,'')
 	    $.ajax({
             type: 'POST',
-            url: "{% url 'ajax_add_order' %}",
-            data: {"title":title,"restName":restName,"mealName":mealName,"remark":remark},
-            success: afterSubmitAddOrder
+            url: "{% url 'ajax_add_week_report' %}",
+            data: {"dtRange":dtRange,"prjName":prjName,"taskName":taskName,"planEndDt":planEndDt,"status":status},
+            success: afterSubmitAddWeekReport
         });
-		$('#AddOrderStatModal').modal('toggle')
+		$('#AddWeekReportModal').modal('toggle')
 	}
 
 	function OpenOrder(row_id,restName,status){
@@ -525,6 +532,24 @@
             }
         }
     }
+
+
+    function ExportExcel(opt){
+        var param = '';
+        if(opt == 'cur'){
+            var curWeek = getWeekStartDate() + '-' + getWeekEndDate() ;
+            param = '&dtRange=' + curWeek;
+        }else if(opt == 'pre'){
+            var preWeek = getLastWeekStartDate() + '-' + getLastWeekEndDate() ;
+            param = '&dtRange=' + preWeek;
+        }else{
+            opt = 'all';
+            param = '&dtRange=';
+        }
+        window.location.href="Download/WeekReportExportExcel?option=" + opt + param;
+    }
+
+
 
 
 
