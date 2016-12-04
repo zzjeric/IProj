@@ -13,19 +13,19 @@
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="/LogOut">LogOut</a>
+                    <a href="/LogOut"><span class="span-user-name" >注销</span></a>
                 </li>
-                <li>
-                    <a href="#">Profile</a>
-                </li>
-                <li>
-                    <a href="#">Help</a>
-                </li>
+                <!--<li>-->
+                    <!--<a href="#">Profile</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a href="#">Help</a>-->
+                <!--</li>-->
             </ul>
             <!--<li>-->
                     {% load static %}
                     <img src="{% static 'Img/HeadIconMale46-46.png' %}" alt="HeadIcon" class="img-circle">
-                    <span class="span-user-name" >welcome,</span><span class="span-user-name" id="icon_group_userName">{{user.username}}</span>
+                    <span class="span-user-name" >欢迎,</span><span class="span-user-name" id="icon_group_userName">{{user.username}}</span>
                 <!--</li>-->
             <!--<form class="navbar-form navbar-right">-->
                 <!--<input type="text" class="form-control" placeholder="Search...">-->

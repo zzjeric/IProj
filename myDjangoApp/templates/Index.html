@@ -1,12 +1,13 @@
 {% extends 'CommonBase/Base.html' %}
 
 
-{% block title %} Index Page for iProj {% endblock %}
+{% block title %} IProj-UpdateInfo {% endblock %}
 
 
 {% block customcss %}
 {% load static %}
 <link href="{% static 'css/dashboard.css' %}" rel="stylesheet">
+<link href="{% static 'css/index.css' %}" rel="stylesheet">
 {% endblock %}
 
 {% block topNav %}
@@ -15,170 +16,88 @@
 
 {% block content %}
 <div class="container-fluid">
-    <div class="row">
 
-        {% include 'CommonBase/LeftNavBar.html' %}
+    {% include 'CommonBase/LeftNavBar.html' %}
+    <div class="wraper">
+        <div class="earth">
+        </div>
+        <span class="line">
+    </span>
+        <div class="log">
+            <ul>
+                <li>
+                    <h3 class="time"><em>2016</em><br><span>12</span>月<span>04</span>日</h3>
+                    <div class="content">
+                        <i></i>
+                        <div class="contentmain">
+                            <h4 class="h4-title">V1.1</h4>
+                            <div class="content-normal">
+                                <p class="stronge">更新：</p>
+                                <p>新增周报录入功能</p>
+                                <p>增加Excel 导出功能</p>
+                                <p>增加注销功能</p>
+                                <p></p>
+                                <p class="stronge">修复：</p>
+                                <p>表格增加分页功能</p>
+                                <p>优化日期显示格式</p>
 
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-            <h1 class="page-header">Dashboard</h1>
-
-            <div class="row placeholders">
-                <div class="col-xs-6 col-sm-3 placeholder">
-                    <img data-src="holder.js/200x200/auto/sky" class="img-responsive"
-                         alt="Generic placeholder thumbnail">
-                    <h4>Label</h4>
-                    <span class="text-muted">Something else</span>
-                </div>
-                <div class="col-xs-6 col-sm-3 placeholder">
-                    <img data-src="holder.js/200x200/auto/vine" class="img-responsive"
-                         alt="Generic placeholder thumbnail">
-                    <h4>Label</h4>
-                    <span class="text-muted">Something else</span>
-                </div>
-                <div class="col-xs-6 col-sm-3 placeholder">
-                    <img data-src="holder.js/200x200/auto/sky" class="img-responsive"
-                         alt="Generic placeholder thumbnail">
-                    <h4>Label</h4>
-                    <span class="text-muted">Something else</span>
-                </div>
-                <div class="col-xs-6 col-sm-3 placeholder">
-                    <img data-src="holder.js/200x200/auto/vine" class="img-responsive"
-                         alt="Generic placeholder thumbnail">
-                    <h4>Label</h4>
-                    <span class="text-muted">Something else</span>
-                </div>
-            </div>
-
-            <h2 class="sub-header">Section title</h2>
-            <div class="table-responsive">
-                <table class="table table-striped">
-                    <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Header</th>
-                        <th>Header</th>
-                        <th>Header</th>
-                        <th>Header</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>1,001</td>
-                        <td>Lorem</td>
-                        <td>ipsum</td>
-                        <td>dolor</td>
-                        <td>sit</td>
-                    </tr>
-                    <tr>
-                        <td>1,002</td>
-                        <td>amet</td>
-                        <td>consectetur</td>
-                        <td>adipiscing</td>
-                        <td>elit</td>
-                    </tr>
-                    <tr>
-                        <td>1,003</td>
-                        <td>Integer</td>
-                        <td>nec</td>
-                        <td>odio</td>
-                        <td>Praesent</td>
-                    </tr>
-                    <tr>
-                        <td>1,003</td>
-                        <td>libero</td>
-                        <td>Sed</td>
-                        <td>cursus</td>
-                        <td>ante</td>
-                    </tr>
-                    <tr>
-                        <td>1,004</td>
-                        <td>dapibus</td>
-                        <td>diam</td>
-                        <td>Sed</td>
-                        <td>nisi</td>
-                    </tr>
-                    <tr>
-                        <td>1,005</td>
-                        <td>Nulla</td>
-                        <td>quis</td>
-                        <td>sem</td>
-                        <td>at</td>
-                    </tr>
-                    <tr>
-                        <td>1,006</td>
-                        <td>nibh</td>
-                        <td>elementum</td>
-                        <td>imperdiet</td>
-                        <td>Duis</td>
-                    </tr>
-                    <tr>
-                        <td>1,007</td>
-                        <td>sagittis</td>
-                        <td>ipsum</td>
-                        <td>Praesent</td>
-                        <td>mauris</td>
-                    </tr>
-                    <tr>
-                        <td>1,008</td>
-                        <td>Fusce</td>
-                        <td>nec</td>
-                        <td>tellus</td>
-                        <td>sed</td>
-                    </tr>
-                    <tr>
-                        <td>1,009</td>
-                        <td>augue</td>
-                        <td>semper</td>
-                        <td>porta</td>
-                        <td>Mauris</td>
-                    </tr>
-                    <tr>
-                        <td>1,010</td>
-                        <td>massa</td>
-                        <td>Vestibulum</td>
-                        <td>lacinia</td>
-                        <td>arcu</td>
-                    </tr>
-                    <tr>
-                        <td>1,011</td>
-                        <td>eget</td>
-                        <td>nulla</td>
-                        <td>Class</td>
-                        <td>aptent</td>
-                    </tr>
-                    <tr>
-                        <td>1,012</td>
-                        <td>taciti</td>
-                        <td>sociosqu</td>
-                        <td>ad</td>
-                        <td>litora</td>
-                    </tr>
-                    <tr>
-                        <td>1,013</td>
-                        <td>torquent</td>
-                        <td>per</td>
-                        <td>conubia</td>
-                        <td>nostra</td>
-                    </tr>
-                    <tr>
-                        <td>1,014</td>
-                        <td>per</td>
-                        <td>inceptos</td>
-                        <td>himenaeos</td>
-                        <td>Curabitur</td>
-                    </tr>
-                    <tr>
-                        <td>1,015</td>
-                        <td>sodales</td>
-                        <td>ligula</td>
-                        <td>in</td>
-                        <td>libero</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
+                                <p>　</p>
+                                <p>　</p>
+                                <p>　</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <h3 class="time"><em>2016</em><br><span>11</span>月<span>04</span>日</h3>
+                    <div class="content">
+                        <i></i>
+                        <div class="contentmain">
+                            <h4 class="h4-title">V1.0</h4>
+                            <div class="content-normal">
+                                <p class="stronge">更新：</p>
+                                <p>新增订餐统计功能</p>
+                                <p>订餐统计详情页增加Echarts 图表显示</p>
+                                <p></p>
+                                <p class="stronge">修复：</p>
+                                <p>完善登陆认证逻辑</p>
+                                <p>数据库从SqlLite 迁移到 MySQL</p>
+                                <p>　</p>
+                                <p>　</p>
+                                <p>　</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <h3 class="time"><em>2016</em><br><span>11</span>月<span>02</span>日</h3>
+                    <div class="content">
+                        <i></i>
+                        <div class="contentmain">
+                            <h4 class="h4-title">关于本站</h4>
+                            <div class="content-normal">
+                                <p class="stronge">源码:</p>
+                                <p>托管于GITHUB: <a href="https://github.com/zzjeric/IProj"> <span class="span-user-name">https://github.com/zzjeric/IProj</span></a>
+                                </p>
+                                <p></p>
+                                <p class="stronge">BasedOn:</p>
+                                <p>前端:Bootstrap&Jquery&Echarts</p>
+                                <p>后台:Django</p>
+                                <p>部署:Ubuntu14.04+Nginx+uwsgi</p>
+                                <p></p>
+                                <p class="stronge">联系：</p>
+                                <p>Mail : zzjeric222@gmail.com</p>
+                                <p>　</p>
+                                <p>　</p>
+                                <p>　</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
+
 </div>
 {% endblock %}
 
@@ -196,5 +115,69 @@ var indexDict = {{ indexDict|safe }};
 		    $(this).removeClass("active");
 		}
 	});
+
+  var rightbuttonHeight;
+  $(window).resize(function(e){setWZ()});
+  function setWZ(){
+    var wht=$(window).height(),
+      topHT=(wht-516)/2,
+      xs=0.3;
+      if(wht<=768) xs=-0.1;
+      if(wht<=900&&wht>768) xs=0.1;
+      rightbuttonHeight = topHT-topHT*xs;
+      $('.wraper').css('margin-top',parseInt(50));
+    $('.rightbutton').css({'margin-top':rightbuttonHeight});
+  }
+  setWZ();
+  $('.content-normal').not(':eq(0)').css({'opacity':'0.5'});
+  $('.content-normal').not(':eq(0)').on('mouseover',function(){
+    $(this).css({'opacity':'1'});
+  }).on('mouseout',function(){
+    $(this).css({'opacity':'0.5'});
+  })
+
+  $('.b-f,.c-f,.a-f').on('mouseover',function(){
+    if($.browser.version != '6.0' && $.browser.version != '7.0' && $.browser.version != '8.0')
+    $('.'+this.className.replace('-f','')).css({'opacity':'1'});
+  }).on('mouseout',function(){
+    if($.browser.version != '6.0' && $.browser.version != '7.0' && $.browser.version != '8.0')
+    $('.'+this.className.replace('-f','')).css({'opacity':'0.4'});
+  })
+
+//  $('.rightbutton').css({'margin-top':'20px'}).animate({'margin-top':rightbuttonHeight},500);
+
+
+  var dtd = $.Deferred();
+
+  function earthShow(){
+    $('.earth').show(1,function(){
+      dtd.resolve();
+    });
+  }
+  dtd.promise(earthShow);
+
+
+  function lineShow(){
+    $('.line').css({'display':'block'});
+    $('.log li').each(function(i){
+      var _self = this;
+      (function(){
+        setTimeout(function(){
+        $(_self).show().css({'-webkit-animation': '1s ease 0ms both','-webkit-animation-name':'bounceInDown'});
+      },200*i);
+      })(i)
+    })
+    $('.log').show().animate({'opacity':'1'});
+  }
+  dtd.promise(lineShow);
+
+  earthShow.then(function(){
+    lineShow()
+  });
+  earthShow(dtd);
+  $('.wraper').animate({'height':'3626px'});
+
+
+
 </script>
 {% endblock %}

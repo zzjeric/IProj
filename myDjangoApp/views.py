@@ -23,9 +23,7 @@ import time
 
 @login_required()
 def index(request):
-    index = request.GET['index']
-    if index is None:
-        index = 0
+    index = 0
     indexDict = {'index': index, 'des': 'index'}
     return render(request, 'Index.html', {'indexDict': json.dumps(indexDict)})
 
