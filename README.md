@@ -1,6 +1,8 @@
 # IProj
 
-A simple content management website powered by django
+A simple content management website powered by django.
+
+[Demo](http://120.24.77.112/SignIn)
 
 ## 关于
 
